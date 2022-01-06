@@ -1,0 +1,9 @@
+server.port: 8080
+
+logging.level.org.springframework: DEBUG
+
+spring.r2dbc:
+  url: r2dbc:postgresql://localhost:5432/test
+  username: postgres
+  password: secreto
+  initialization-mode: always
