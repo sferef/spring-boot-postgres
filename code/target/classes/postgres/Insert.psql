@@ -1,3 +1,0 @@
-INSERT INTO expenditure(name, category, amount, customer) VALUES('Home rent', 'Rent', 1500, 'kevin');
-INSERT INTO expenditure(name, category, amount, customer) VALUES('Gas', 'Bill', 50, 'kevin');
-INSERT INTO expenditure(name, category, amount, customer) VALUES('Electricity', 'Bill', 50, 'kevin');

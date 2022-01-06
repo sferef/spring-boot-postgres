@@ -1,2 +1,0 @@
-DROP TABLE IF EXISTS expenditure;
-CREATE TABLE expenditure(name VARCHAR(255) PRIMARY KEY, category VARCHAR(255), amount DOUBLE PRECISION, customer  VARCHAR(255) );

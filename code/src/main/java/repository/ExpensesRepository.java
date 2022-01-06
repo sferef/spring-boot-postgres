@@ -1,10 +1,12 @@
 package repository;
 
-import model.Expenditure;
-import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Repository;
+import domain.Expenditure;
+import org.springframework.data.r2dbc.repository.Query;
+import org.springframework.data.repository.reactive.ReactiveCrudRepository;
+import reactor.core.publisher.Flux;
 
-@Repository
-public interface ExpensesRepository extends CrudRepository<Expenditure, String> {
+public interface ExpensesRepository extends ReactiveCrudRepository<Expenditure, String> {
 
+    @Query("SELECT * FROM test.expenditure")
+    Flux<Expenditure> findAllExpenses();
 }

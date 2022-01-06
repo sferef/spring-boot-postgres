@@ -6,6 +6,9 @@ Run container
 ```shell
 
 docker run --name postgres -e POSTGRES_PASSWORD=s$cret -d postgres
+
+docker exec -it d67cea34ca83 bash 
+
 ```
 
 Connecting 
@@ -25,4 +28,12 @@ Check connection
 Exit session
 ```
 \q
+```
+
+```sql
+CREATE DATABASE test;
+```
+
+```sql
+\c [database]
 ```
